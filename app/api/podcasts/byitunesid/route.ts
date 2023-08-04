@@ -1,3 +1,4 @@
+import { unstable_cache } from 'next/cache'
 import { NextResponse } from 'next/server'
 import PodcastIndexClient from 'podcast-index-client'
 
@@ -15,7 +16,16 @@ export async function GET(request: Request) {
 
   if (!id) return new Response('id is required', { status: 400 })
 
-  const { feed } = await client.podcastByItunesId(Number(id))
+  const cacheData = await unstable_cache(
+    async () => {
+      const { feed } = await client.podcastByItunesId(Number(id))
+      return feed
+    },
+    [id],
+    {
+      revalidate: 86400,
+    }
+  )()
 
-  return NextResponse.json({ data: feed })
+  return NextResponse.json({ data: cacheData })
 }
