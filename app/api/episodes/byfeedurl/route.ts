@@ -1,13 +1,6 @@
 import { unstable_cache } from 'next/cache'
 import { NextResponse } from 'next/server'
-import PodcastIndexClient from 'podcast-index-client'
 import { parse } from 'rss-to-json'
-
-const client = new PodcastIndexClient({
-  key: process.env.PODCAST_INDEX_API_KEY,
-  secret: process.env.PODCAST_INDEX_API_SECRET,
-  disableAnalytics: true,
-})
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)

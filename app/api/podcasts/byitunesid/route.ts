@@ -5,7 +5,6 @@ import PodcastIndexClient from 'podcast-index-client'
 const client = new PodcastIndexClient({
   key: process.env.PODCAST_INDEX_API_KEY,
   secret: process.env.PODCAST_INDEX_API_SECRET,
-  disableAnalytics: true,
 })
 
 export const revalidate = 86400

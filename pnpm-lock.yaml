@@ -5,8 +5,8 @@ dependencies:
     specifier: 13.4.12
     version: 13.4.12(react-dom@18.2.0)(react@18.2.0)
   podcast-index-client:
-    specifier: ^6.0.0
-    version: 6.0.0
+    specifier: ^6.0.1
+    version: 6.0.1
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -647,6 +647,7 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
 
   /deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
@@ -1756,6 +1757,7 @@ packages:
 
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+    dev: true
 
   /ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
@@ -2005,18 +2007,16 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /podcast-index-client@6.0.0:
-    resolution: {integrity: sha512-2zx0lGm92xm3e9rX1/eXSUsnNOcxNXfI2yerYYH7okrq48v6zmYFt6k1YtjEqpDOKhUrqeMYtHKyY/RPEPnCcQ==}
+  /podcast-index-client@6.0.1:
+    resolution: {integrity: sha512-EBopT5CHla04tMkX/q1eSrYLCEo+XDYTecMipvewefFsEjSMXVYjFauMO8VD+BHsSLI4tpU/v7RGezFIMDEJ7w==}
     dependencies:
       ajv: 7.2.4
-      debug: 4.3.4
       dotenv: 8.6.0
       node-fetch: 2.6.12
       ramda: 0.27.2
       typescript-json-schema: 0.49.0
     transitivePeerDependencies:
       - encoding
-      - supports-color
     dev: false
 
   /postcss@8.4.14:
