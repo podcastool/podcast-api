@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "github-markdown-css": "^5.2.0",
     "next": "13.4.12",
+    "next-mdx-remote": "^4.4.1",
     "podcast-index-client": "^6.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
